@@ -71,12 +71,12 @@ class Main():
         min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
 
         # Draw a rectangle around the matched area
-        top_left = max_loc
-        bottom_right = (top_left[0] + template.shape[1], top_left[1] + template.shape[0])
-        cv2.rectangle(screenshot, top_left, bottom_right, (0, 255, 0), 2)
+        #top_left = max_loc
+        #bottom_right = (top_left[0] + template.shape[1], top_left[1] + template.shape[0])
+        #cv2.rectangle(screenshot, top_left, bottom_right, (0, 255, 0), 2)
 
         # Display the image
-        cv2.imshow('Screen Capture', screenshot)
+        #cv2.imshow('Screen Capture', screenshot)
 
         # Return the max value of the template matching
         return max_val
